@@ -8,14 +8,20 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#contact">Contact</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#blog">Blog</a>
-    </nav>
+    <div class="header-top">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <button class="dark-mode-toggle" id="darkModeBtn" aria-label="Toggle dark mode" title="Dark Mode">
+        <span class="toggle-icon">🌙</span>
+      </button>
+    </div>
     <section class="hero" id="home">
       <div class="hero-card">
         <img class="profile-photo" src="https://i.pinimg.com/736x/dc/de/c7/dcdec79772c844c599c23f47432de597.jpg" alt="Profile photo" />
@@ -43,9 +49,11 @@
         </div>
         <div>
           <p class="label">Social</p>
-          <p>
-            <a href="https://www.facebook.com/peerunton.k/" target="_blank" rel="noopener noreferrer">Facebook: Peerunton K.</a>
-          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/peerunton.k/" target="_blank" rel="noopener noreferrer" title="Facebook">Facebook</a>
+            <a href="https://github.com/peeruntornk-gif" target="_blank" rel="noopener noreferrer" title="GitHub">GitHub</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">Instagram</a>
+          </div>
         </div>
       </div>
     </section>
@@ -58,7 +66,7 @@
           <div>
             <h3>Example University</h3>
             <p>major: Faculty of IT, Information Technology</p>
-            <p>GPA: 3.32 / 4.0</p>
+            <p>GPA: 3.33 / 4.0</p>
           </div>
         </article>
         <article class="education-item">
@@ -91,6 +99,27 @@
             
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section class="panel portfolio-panel" id="portfolio">
+      <h2>Portfolio Highlights</h2>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+          <h3>Photography Collection</h3>
+          <p>Professional portrait and landscape photography featuring diverse subjects and creative lighting techniques.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+          <h3>Web Development</h3>
+          <p>Modern responsive websites built with HTML, CSS, and JavaScript. Focus on clean design and user experience.</p>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+          <h3>Music Projects</h3>
+          <p>Recordings and performances blending multiple genres. Creative direction for events and community gatherings.</p>
+        </article>
       </div>
     </section>
 
